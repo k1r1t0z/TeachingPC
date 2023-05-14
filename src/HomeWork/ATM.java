@@ -5,28 +5,34 @@ public class ATM {
     int banknotes20;
     int banknotes50;
     int banknotes100;
+    int num20;
+    int num50;
+    int num100;
 
     public ATM() {
         this.sumAtm = 1000;
         this.banknotes20 = 20;
         this.banknotes50 = 50;
         this.banknotes100 = 100;
+        this.num20 = 100;
+        this.num50 = 100;
+        this.num100 = 100;
     }
 
-    void addMoney(int addMoney20, int addMoney50, int addMoney100) {
-        addMoney20 = addMoney20 + banknotes20;
-        addMoney50 = addMoney50 + banknotes50;
-        addMoney100 = addMoney100 + banknotes100;
+    void addMoneyInAtm(int addMoney20, int addMoney50, int addMoney100) {
+        addMoney20 = addMoney20 + num20;
+        addMoney50 = addMoney50 + num50;
+        addMoney100 = addMoney100 + num100;
     }
 
     void giveMoney(int sum) {
         if (sum % 10 != 0) {
-            System.out.println("Ошибка");
+            System.out.println("Введите корректную сумму");
         } else {
-            if (banknotes20 * 20 + banknotes50 * 50 + banknotes100 * 100 >= sum) {
+            if (banknotes20 * 20 + banknotes50 * 50 + banknotes100 * 100 >= sum && sum <= sumAtm) {
                 System.out.println("Операция прошла успешно");
             } else {
-                System.out.println("Операция не удалась. Банкомат принимает купюры: 20 50 100");
+                System.out.println("Операция не удалась");
             }
         }
     }
