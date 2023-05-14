@@ -29,7 +29,7 @@ public class ATM {
         if (sum % 10 != 0) {
             System.out.println("Введите корректную сумму");
         } else {
-            if (banknotes20 * 20 + banknotes50 * 50 + banknotes100 * 100 >= sum && sum <= sumAtm) {
+            if (num20 * 20 + num50 * 50 + num100 * 100 >= sum && sum <= sumAtm) {
                 System.out.println("Операция прошла успешно");
             } else {
                 System.out.println("Операция не удалась");
