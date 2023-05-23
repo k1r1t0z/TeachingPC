@@ -21,9 +21,10 @@ public class Circle extends Figure {
     }
 
     @Override
-    void perimeter() {
+    double perimeter() {
         radius = circle / (Math.PI * 2);
-        System.out.println("Perimeter circle " + (2 * Math.PI * radius));
+        System.out.print("Perimeter circle + ");
+        return 2 * Math.PI * radius;
     }
 
     @Override

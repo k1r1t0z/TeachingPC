@@ -5,24 +5,20 @@ public class Main {
         Triangle triangle = new Triangle(15, 15, 15);
         Circle circle = new Circle(10);
         Rectangle rectangle = new Rectangle(15, 10, 15, 10);
-        triangle.perimeter();
         triangle.square();
-        circle.perimeter();
+        System.out.println(triangle.perimeter());
         circle.square();
-        rectangle.perimeter();
+        System.out.println(circle.perimeter());
         rectangle.square();
+        System.out.println(rectangle.perimeter());
         Figure[] figure = new Figure[3];
         figure[0] = new Circle(10);
         figure[1] = new Rectangle(15, 10, 15, 10);
         figure[2] = new Triangle(15, 15, 15);
+        double sumOfPerimeter = 0;
         for (int i = 0; i < figure.length; i++) {
-            if (i == 0) {
-                figure[i].perimeter();
-            } else if (i == 1) {
-                figure[i].perimeter();
-            } else if (i == 2) {
-                figure[i].perimeter();
-            }
+            sumOfPerimeter = sumOfPerimeter + figure[i].perimeter();
         }
+        System.out.println("= " + sumOfPerimeter);
     }
 }

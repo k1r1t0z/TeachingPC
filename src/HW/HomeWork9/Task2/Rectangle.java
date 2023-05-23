@@ -46,8 +46,9 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    void perimeter() {
-        System.out.println("Perimeter Rectangle " + (sideA + sideB + sideC + sideD));
+    double perimeter() {
+        System.out.print("Perimeter rectangle + ");
+        return sideA + sideB + sideC + sideD;
     }
 
     @Override
