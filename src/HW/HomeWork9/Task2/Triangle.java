@@ -37,7 +37,6 @@ public class Triangle extends Figure {
 
     @Override
     double perimeter() {
-        System.out.print("Perimeter triangle ");
         return sideA + sideB + sideC;
     }
 

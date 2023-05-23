@@ -19,6 +19,6 @@ public class Main {
         for (int i = 0; i < figure.length; i++) {
             sumOfPerimeter = sumOfPerimeter + figure[i].perimeter();
         }
-        System.out.println("= " + sumOfPerimeter);
+        System.out.println(sumOfPerimeter);
     }
 }
