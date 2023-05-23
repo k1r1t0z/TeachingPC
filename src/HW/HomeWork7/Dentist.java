@@ -1,4 +1,4 @@
-package HomeWork7;
+package HW.HomeWork7;
 
 public class Dentist extends Hospital {
     @Override

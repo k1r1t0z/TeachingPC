@@ -1,4 +1,4 @@
-package HomeWork8;
+package HW.HomeWork8;
 
 public class Animal {
     static void voice() {

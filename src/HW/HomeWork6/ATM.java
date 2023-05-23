@@ -1,4 +1,4 @@
-package HomeWork6;
+package HW.HomeWork6;
 
 public class ATM {
     int sumAtm;

@@ -1,19 +1,15 @@
-package HomeWork8;
+package HW.HomeWork8;
 
-public class Dog extends Animal {
-    private Dog() {
-
-    }
-
+public class Tiger extends Animal {
     static void voice() {
-        System.out.println("I'm talk woof woof");
+        System.out.println("I'm talk RRR");
     }
 
     static void eat(String food) {
         if (food == "Meat" || food == "meat") {
             System.out.println("Mmm, tasty");
         } else {
-            System.out.println("I'm don't eat this");
+            System.out.println("So bad");
         }
     }
 }

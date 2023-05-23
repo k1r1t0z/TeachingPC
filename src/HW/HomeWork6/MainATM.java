@@ -1,4 +1,4 @@
-package HomeWork6;
+package HW.HomeWork6;
 
 public class MainATM {
     public static void main(String[] args) {
