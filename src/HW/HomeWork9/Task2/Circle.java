@@ -20,14 +20,19 @@ public class Circle extends Figure {
         this.circle = circle;
     }
 
+    double rad() {
+        radius = circle / (Math.PI * 2);
+        return radius;
+    }
+
     @Override
     double perimeter() {
-        radius = circle / (Math.PI * 2);
-        return 2 * Math.PI * radius;
+        double per = 2 * Math.PI * rad();
+        return per;
     }
 
     @Override
     void square() {
-        System.out.println("Square circle " + (Math.PI * (Math.pow(radius, 2))));
+        System.out.println("Square circle " + (Math.PI * (Math.pow(rad(), 2))));
     }
 }
