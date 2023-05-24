@@ -21,18 +21,16 @@ public class Circle extends Figure {
     }
 
     double rad() {
-        radius = circle / (Math.PI * 2);
-        return radius;
+        return circle / (Math.PI * 2);
     }
 
     @Override
     double perimeter() {
-        double per = 2 * Math.PI * rad();
-        return per;
+        return 2 * Math.PI * rad();
     }
 
     @Override
     void square() {
-        System.out.println("Square circle " + (Math.PI * (Math.pow(rad(), 2))));
+        System.out.println(Math.PI * (Math.pow(rad(), 2)));
     }
 }

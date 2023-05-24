@@ -6,11 +6,11 @@ public class Main {
         Circle circle = new Circle(10);
         Rectangle rectangle = new Rectangle(15, 10, 15, 10);
         triangle.square();
-        System.out.println(triangle.perimeter());
+        double perimeterTriangle = triangle.perimeter();
         circle.square();
-        System.out.println(circle.perimeter());
+        double perimeterCircle = circle.perimeter();
         rectangle.square();
-        System.out.println(rectangle.perimeter());
+        double perimeterRectangle = rectangle.perimeter();
         Figure[] figure = new Figure[3];
         figure[0] = new Circle(10);
         figure[1] = new Rectangle(15, 10, 15, 10);
@@ -19,6 +19,6 @@ public class Main {
         for (int i = 0; i < figure.length; i++) {
             sumOfPerimeter = sumOfPerimeter + figure[i].perimeter();
         }
-        System.out.println(sumOfPerimeter);
+        System.out.println("Сумма перимтера фигур " + sumOfPerimeter);
     }
 }

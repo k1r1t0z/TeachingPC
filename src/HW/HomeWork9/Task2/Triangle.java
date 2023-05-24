@@ -43,7 +43,7 @@ public class Triangle extends Figure {
     @Override
     void square() {
         double semiPerimeter = (double) (sideA + sideB + sideC) / 2;
-        double square = Math.sqrt(semiPerimeter * (semiPerimeter - sideA) * (semiPerimeter - sideB) * (semiPerimeter - sideC));
-        System.out.println("Square triangle " + square);
+        double area = Math.sqrt(semiPerimeter * (semiPerimeter - sideA) * (semiPerimeter - sideB) * (semiPerimeter - sideC));
+        System.out.println(area);
     }
 }

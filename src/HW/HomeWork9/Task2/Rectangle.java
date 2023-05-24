@@ -52,6 +52,6 @@ public class Rectangle extends Figure {
 
     @Override
     void square() {
-        System.out.println("Square rectangle " + (sideA * sideB));
+        System.out.println(sideA * sideB);
     }
 }
