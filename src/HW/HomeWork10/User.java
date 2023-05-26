@@ -1,5 +1,7 @@
 package HW.HomeWork10;
 
+import java.util.Objects;
+
 public class User {
     private int age;
     private String name;
@@ -36,8 +38,16 @@ public class User {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return age == user.age && gen == user.gen && Objects.equals(name, user.name);
+    }
+
+    @Override
     public int hashCode() {
-        return 100 * age * 345;
+        return Objects.hash(age, name, gen);
     }
 
     @Override
